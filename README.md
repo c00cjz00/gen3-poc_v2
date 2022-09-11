@@ -1,7 +1,7 @@
 Compose-Services
 ===
 
-* reand  build.sh
+* Read and excute build.sh
 
 
 
