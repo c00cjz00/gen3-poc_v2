@@ -182,8 +182,7 @@ services:
       - ./scripts/peregrine_setup.sh:/peregrine_setup.sh
       - ./datadictionary/gdcdictionary/schemas:/schemas_dir
     environment: &env
-      DICTIONARY_URL: https://covid-19.nchc.org.tw/gen3/schema.json
-	  #DICTIONARY_URL: https://s3.amazonaws.com/dictionary-artifacts/datadictionary/develop/schema.json
+      DICTIONARY_URL: https://s3.amazonaws.com/dictionary-artifacts/datadictionary/develop/schema.json
       # PATH_TO_SCHEMA_DIR: /schemas_dir
       REQUESTS_CA_BUNDLE: /etc/ssl/certs/ca-certificates.crt
     healthcheck:
@@ -350,8 +349,7 @@ services:
     networks:
       - devnet
     environment:
-	  - DICTIONARY_URL=https://covid-19.nchc.org.tw/gen3/schema.json
-      #- DICTIONARY_URL=https://s3.amazonaws.com/dictionary-artifacts/datadictionary/develop/schema.json
+	  - DICTIONARY_URL=https://s3.amazonaws.com/dictionary-artifacts/datadictionary/develop/schema.json
       - ES_URL=esproxy-service
       - ES_INDEX_NAME=etl
       - HADOOP_URL=hdfs://spark-service:9000

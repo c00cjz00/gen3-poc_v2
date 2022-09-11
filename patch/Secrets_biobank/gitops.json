@@ -4,7 +4,7 @@
     "appName": "生醫服務入口平台",
     "index": {
       "introduction": {
-        "heading": "2生醫服務入口平台",
+        "heading": "生醫服務入口平台",
         "text": "LIONS Data Framework. 整合生醫領域資料，串接各類生醫研究常用資料庫的API，提供單一入口平臺，讓研究人員可以同時查詢多種資料庫.",
         "link": "/submission"
       },
@@ -128,14 +128,24 @@
         "plural": "Cases"
       },
       {
+        "graphql": "_demographic_count",
+        "name": "Demographic",
+        "plural": "Demographic"
+      },
+      {
+        "graphql": "_diagnosis_count",
+        "name": "Diagnosis",
+        "plural": "Diagnosis"
+      },
+      {
         "graphql": "_sample_count",
         "name": "Sample",
         "plural": "Samples"
       },
       {
-        "graphql": "_slide_count",
-        "name": "Slide",
-        "plural": "Slides"
+        "graphql": "_slide_image_count",
+        "name": "Slide Image",
+        "plural": "Slide Images"
       }
     ],
     "chartCounts": [
